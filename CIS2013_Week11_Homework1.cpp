@@ -104,7 +104,8 @@ class Car {
 			if (current_speed == 0) {
 				cout << "The car is off! Start the car before driving! " << endl;
 				} else {
-				current_speed=-10;
+					for (int i=current_speed; i>=10; i--)
+				//current_speed=-10;
 			
 			cout << "The left signal is on. Turning left. " << endl;
 				}
@@ -113,7 +114,8 @@ class Car {
 			if (current_speed == 0) {
 				cout << "The car is off! Start the car before driving! " << endl;
 				} else {
-				current_speed=-10;
+					for (int i=current_speed; i>=10; i--)
+				//current_speed=-10;
 			
 			cout << "The right signal is on. Turning right. " << endl;
 				}
@@ -133,15 +135,18 @@ int main () {
 	
 	// char c, o, m;
 	// int y;
-	Car toyota;
+	Car car;
 	
-	toyota.print ();
-	toyota.set_color ();
-	toyota.set_model ();
-	toyota.set_make ();
-	toyota.set_year ();
-	
-	toyota.print ();
+	car.print ();
+	car.set_color ();
+	car.set_model ();
+	car.set_make ();
+	car.set_year ();
+	car.start ();
+	car.speed_up ();
+	car.turn_left ();
+	car.stop ();
+	car.print ();
 	
 	return 0;
 	}
