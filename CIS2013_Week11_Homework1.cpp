@@ -72,7 +72,7 @@ class Car {
 				cout << "The car is already off! " << endl;
 			} else {
 				if (current_speed >> 20) {
-					cout << " Slow down ! "<< endl;
+					cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
 				}
 				else {
 				current_speed = 0;
@@ -89,6 +89,7 @@ class Car {
 				cout << "The car is off! Start the car before driving! " << endl;
 			} else {
 				current_speed=+10;
+				cout << "Your current speed is " << current_speed << endl;
 			
 			}
 		}
@@ -97,6 +98,7 @@ class Car {
 				cout << "The car is off! Start the car before driving! " << endl;
 			} else {
 				current_speed=-10;
+				cout << "Your current speed is " << current_speed << endl;
 			
 			}
 		}
@@ -107,7 +109,8 @@ class Car {
 					for (int i=current_speed; i>=10; i--)
 				//current_speed=-10;
 			
-			cout << "The left signal is on. Turning left. " << endl;
+				cout << "The left signal is on. Turning left. " << endl;
+				cout << "Your current speed is " << current_speed << endl;
 				}
 		}
 		void turn_right () {
@@ -118,6 +121,7 @@ class Car {
 				//current_speed=-10;
 			
 			cout << "The right signal is on. Turning right. " << endl;
+			cout << "Your current speed is " << current_speed << endl;
 				}
 			
 			
