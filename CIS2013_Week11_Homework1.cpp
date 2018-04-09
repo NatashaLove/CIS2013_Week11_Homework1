@@ -1,24 +1,12 @@
 #include <iostream>
 #include <cstring>
+#include <string>
 using namespace std;
 // the class will remember all data changes in the main
 class Car {
 	
-	/*private:
-		string color = "n/a";
-		string make = "n/a";
-		string model = "n/a";
-		int year = 0;
-		int current_speed = 0;
-		*/
-	public:
-		/*void set (string c, string m, string o, int y) {
-			year = y;
-			color = c;
-			make = m;
-			model = o;
-		}*/
-		
+		public:
+				
 		string color = "n/a";
 		string make = "n/a";
 		string model = "n/a";
@@ -26,10 +14,7 @@ class Car {
 		int current_speed = 0;
 		
 		void print () {
-			// string c;
-			// string m;
-			// string o;
-			// int y;
+			
 			cout <<"						You are driving a " << year <<  " " << model << " " << make << " " << color << " with current speed: " << current_speed << " m/h" << endl;
 		}
 		
@@ -91,6 +76,11 @@ class Car {
 		void speed_up () {
 			if (current_speed == 0) {
 				cout << "					The car is off! Start the car before driving! " << endl;
+			} else if (current_speed >= 150){
+				
+				cout << "					Your car is at its speed limit!" << endl;
+				cout << "					Your current speed is " << current_speed << " m/h" << endl;
+				
 			} else {
 				current_speed+=10;
 				cout << "					Your current speed is " << current_speed << " m/h" << endl;
@@ -139,12 +129,13 @@ class Car {
 		
 			
 		}
-		/*int get_year () {
-			return year; // create this function to access year from private class
+		
+		void catapult () {
+			cout << "					SEE YAAAAA....!" << endl;
+			cout <<"					Don't forget your parachute!" << endl;
+			exit (1);
 		}
-		void set_year (int y) {
-			year = y;
-		}*/
+		
 		
 };
 
@@ -193,8 +184,10 @@ int main () {
 	cout << "Speed up (u) " << endl;
 	cout << "Slow down (d) " << endl;
 	cout << " " << endl;
+	cout << "Special case - CATAPULT (X)"<< endl;
 	
-	
+	cout << " " << endl;
+	cout << "Your choice is : ";
 	cin >> choice;
 		switch (choice)
 		{
@@ -234,32 +227,15 @@ int main () {
 		case 'd' :
 		car.slow_down ();
 		break;
+		case 'X' :
+		car.catapult ();
 		
 		default : 
 		cout << "Illegal value.";
 		}
 	}
 	while (1);
-	/*if (choice == c)
-	car.set_color ();
-	if (choice == o)
-	car.set_model ();	
-	if (choice == m)
-	car.set_make ();
-	if (choice == p)
-	car.print ();
-	*/
-	// car.print ();
-	// car.set_color ();
-	// car.set_model ();
-	// car.set_make ();
-	// car.set_year ();
-	// car.start ();
-	// car.speed_up ();
-	// car.turn_left ();
-	// car.stop ();
-	// car.print ();
-	
+		
 	return 0;
 	}
 	
