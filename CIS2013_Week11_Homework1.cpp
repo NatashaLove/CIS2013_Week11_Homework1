@@ -111,29 +111,32 @@ class Car {
 			if (current_speed == 0) {
 				cout << "The car is off! Start the car before driving! " << endl;
 				} else if (current_speed > 30) {
-						cout << << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						
 					} else {
 					
 					for (int i=current_speed; i >= 15; i-=5)
 						current_speed = i;
 				//cout << "Your speed is now " << current_speed<< endl;
+				cout << "The left signal is on. Turning left. " << endl;
+				cout << "Your current speed is " << current_speed << endl;
 				}
-		cout << "The left signal is on. Turning left. " << endl;
-		cout << "Your current speed is " << current_speed << endl;
+		
 		}
 		void turn_right () {
 			if (current_speed == 0) {
 				cout << "The car is off! Start the car before driving! " << endl;
 				} else if (current_speed > 30) {
-						cout << << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						
 				} else {
 					for (int i=current_speed; i >=15; i-=5)
 					current_speed = i;
 				//cout << "Your speed is now " << current_speed<< endl;
-		
+				cout << "The right signal is on. Turning right. " << endl;
+				cout << "Your current speed is " << current_speed << endl;	
 				}
-		cout << "The right signal is on. Turning right. " << endl;
-		cout << "Your current speed is " << current_speed << endl;	
+		
 			
 		}
 		/*int get_year () {
