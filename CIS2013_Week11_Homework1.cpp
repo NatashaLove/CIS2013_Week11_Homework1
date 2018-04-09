@@ -30,7 +30,7 @@ class Car {
 			// string m;
 			// string o;
 			// int y;
-			cout <<"You are driving a " << year <<  " " << model << " " << make << " " << color << " with current speed: " << current_speed << endl;
+			cout <<"						You are driving a " << year <<  " " << model << " " << make << " " << color << " with current speed: " << current_speed << " m/h" << endl;
 		}
 		
 		
@@ -62,38 +62,38 @@ class Car {
 		void start () {
 			if (current_speed==0) {
 				current_speed = 25;
-				cout << "The car is started and driving at the speed " << current_speed<< endl;
+				cout << "					The car is started and driving at the speed " << current_speed<< " m/h" << endl;
 			} else {
-				cout << "The car is already driving! " << endl;
+				cout << "					The car is already driving! " << endl;
 				
 			}
 		}
 		void stop () {
 			if (current_speed == 0) {
-				cout << "The car is already off! " << endl;
+				cout << "					The car is already off! " << endl;
 			} else {
 				if (current_speed > 20) {
-					cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+					cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
 				}
 				else {
 				current_speed = 0;
-				cout << "The car has stopped. " << endl;
+				cout << "					The car has stopped. " << endl;
 				}
 			}
 		}
 		void drive () {
 			if (current_speed == 0) {
-				cout << "The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! " << endl;
 			} else {
-				cout << "You are driving at the speed "<< current_speed << endl;
+				cout << "					You are driving at the speed "<< current_speed << " m/h" << endl;
 			} 
 		}
 		void speed_up () {
 			if (current_speed == 0) {
-				cout << "The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! " << endl;
 			} else {
 				current_speed+=10;
-				cout << "Your current speed is " << current_speed << endl;
+				cout << "					Your current speed is " << current_speed << " m/h" << endl;
 			
 			}
 		}
@@ -101,40 +101,40 @@ class Car {
 			if (current_speed > 0) {
 				//for (int i=current_speed; i>=0; --i)
 				current_speed-=5;
-				cout << "Your current speed is " << current_speed << endl;
+				cout << "					Your current speed is " << current_speed << " m/h" << endl;
 				
 			} else {
-				cout << "The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! " << endl;
 			}
 		}
 		void turn_left () {
 			if (current_speed == 0) {
-				cout << "The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! " << endl;
 				} else if (current_speed > 30) {
-						cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
 						
 					} else {
 					
 					for (int i=current_speed; i >= 15; i-=5)
 						current_speed = i;
 				//cout << "Your speed is now " << current_speed<< endl;
-				cout << "The left signal is on. Turning left. " << endl;
-				cout << "Your current speed is " << current_speed << endl;
+				cout << "					The left signal is on. Turning left. " << endl;
+				cout << "					Your current speed is " << current_speed << " m/h" << endl;
 				}
 		
 		}
 		void turn_right () {
 			if (current_speed == 0) {
-				cout << "The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! " << endl;
 				} else if (current_speed > 30) {
-						cout << "Your current speed is " << current_speed << " Slow down ! "<< endl;
+						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
 						
 				} else {
 					for (int i=current_speed; i >=15; i-=5)
 					current_speed = i;
 				//cout << "Your speed is now " << current_speed<< endl;
-				cout << "The right signal is on. Turning right. " << endl;
-				cout << "Your current speed is " << current_speed << endl;	
+				cout << "					The right signal is on. Turning right. " << endl;
+				cout << "					Your current speed is " << current_speed << " m/h" <<endl;	
 				}
 		
 			
@@ -158,7 +158,7 @@ int main () {
 	cout << endl;
 	cout << "***********************************************" << endl;
 	cout << endl;
-	cout << "Welcome to our test drive! " << endl;
+	cout << "					Welcome to our test drive! " << endl;
 	cout << endl;
 	cout << " " << endl;
 	cout << "Set your car's color (c) "<< endl;
