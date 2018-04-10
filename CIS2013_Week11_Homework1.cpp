@@ -15,9 +15,12 @@ class Car {
 		
 		void print () {
 			
-			cout <<"						You are driving a " << year <<  " " << model << " " << make << " " << color << " with current speed: " << current_speed << " m/h" << endl;
+			cout << "*************************************************************************************************************************************	" << endl;
+			cout << endl;
+			cout << "					You are driving a " << year <<  " " << model << " " << make << " " << color << " with current speed: " << current_speed << " m/h" << endl;
+			cout << "*************************************************************************************************************************************	" << endl;
+			cout << endl;
 		}
-		
 		
 		void set_make () {
 			//string m;
@@ -147,7 +150,7 @@ int main () {
 	Car car;
 	
 	cout << endl;
-	cout << "***********************************************" << endl;
+	cout << "			  *************************************************" << endl;
 	cout << endl;
 	cout << "					Welcome to our test drive! " << endl;
 	cout << endl;
