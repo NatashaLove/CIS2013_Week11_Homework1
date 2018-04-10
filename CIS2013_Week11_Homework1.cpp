@@ -58,7 +58,7 @@ class Car {
 				cout << "					The car is already off! " << endl;
 			} else {
 				if (current_speed > 20) {
-					cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
+					cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! (d) "<< endl;
 				}
 				else {
 				current_speed = 0;
@@ -68,14 +68,14 @@ class Car {
 		}
 		void drive () {
 			if (current_speed == 0) {
-				cout << "					The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! (s) " << endl;
 			} else {
 				cout << "					You are driving at the speed "<< current_speed << " m/h" << endl;
 			} 
 		}
 		void speed_up () {
 			if (current_speed == 0) {
-				cout << "					The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! (s) " << endl;
 			} else if (current_speed >= 150){
 				
 				cout << "					Your car is at its speed limit!" << endl;
@@ -94,14 +94,14 @@ class Car {
 				cout << "					Your current speed is " << current_speed << " m/h" << endl;
 				
 			} else {
-				cout << "					The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! (s) " << endl;
 			}
 		}
 		void turn_left () {
 			if (current_speed == 0) {
-				cout << "					The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! (s) " << endl;
 				} else if (current_speed > 30) {
-						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
+						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! (d) "<< endl;
 						
 					} else {
 					
@@ -115,9 +115,9 @@ class Car {
 		}
 		void turn_right () {
 			if (current_speed == 0) {
-				cout << "					The car is off! Start the car before driving! " << endl;
+				cout << "					The car is off! Start the car before driving! (s)" << endl;
 				} else if (current_speed > 30) {
-						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! "<< endl;
+						cout << "					Your current speed is " << current_speed << " m/h!" << " Slow down ! (d) "<< endl;
 						
 				} else {
 					for (int i=current_speed; i >=15; i-=5)
@@ -152,11 +152,11 @@ int main () {
 	cout << "					Welcome to our test drive! " << endl;
 	cout << endl;
 	cout << " " << endl;
-	cout << "Set your car's color (c) "<< endl;
-	cout << "Set your car's model (o) " << endl;
-	cout << "Set your car's make (m) " << endl;
-	cout << "Set your car's year (y) " << endl;
-	cout << "Print your car's settings (p) " << endl;
+	cout << "Set your car's color  "<< endl;
+	cout << "Set your car's model  " << endl;
+	cout << "Set your car's make " << endl;
+	cout << "Set your car's year  " << endl;
+	cout << "Print your car's settings " << endl;
 	cout << endl;
 	cout << " " << endl;
 	
